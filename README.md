@@ -56,11 +56,22 @@ Incluye datos demográficos y de membresía:
 El análisis incluye gráficos que permiten responder a:
 
 - **2.1** Distribución mensual de vuelos reservados  
-- **2.2** Relación entre distancia volada y puntos acumulados  
-- **2.3** Distribución de clientes por provincia/estado  
+![Distribución vuelos](images\barplot_reservas_desglose_mensual.png)
+
+- **2.2** Relación entre distancia volada y puntos acumulados 
+![Puntos Aerolínea](images/scatterplot_puntos_aerolinea.png)
+
+- **2.3** Distribución de clientes por provincia/estado 
+![Distribución clientes](images/countplot_procedencia_clientes.png) 
+
 - **2.4** Comparación del salario medio por nivel educativo  
+![Salario vs Nivel Educativo](images/boxplot_salario_promedio.png)
+
 - **2.5** Proporción de tipos de tarjeta de fidelidad  
+![Fidelidad](images\pie_fidelidad.png)
+
 - **2.6** Distribución combinada por estado civil y género  
+![Distribución estado civil](images\countplot_distribucion_civil_genero.png)
 
 Las visualizaciones generadas durante el análisis y mostradas en este README se encuentran en `images/`.
 
@@ -89,8 +100,6 @@ Las visualizaciones generadas durante el análisis y mostradas en este README se
 │
 └── README.md                  # Documentación principal
 
-
-
 ---
 
 # 🛠️ MÓDULO DE SOPORTE: `soporte_transformacion.py`
@@ -116,3 +125,9 @@ Esta carpeta se utiliza para:
 
 - **Mantener el repositorio ligero**, evitando almacenar archivos grandes.  
 - **Facilitar el flujo de trabajo**, guardando datasets procesados sin necesidad de versionarlos en Git.  
+
+
+# 📄 Documento de apoyo
+
+Además de este README, se ha generado un **documento de documentación detallada** donde se recopila todo el proceso exploratorio realizado en el Jupyter Notebook.
+En él se incluyen las observaciones, análisis, decisiones y justificaciones aplicadas durante las fases de exploración, limpieza y visualización de los datos.
