@@ -68,23 +68,27 @@ Las visualizaciones generadas durante el análisis y mostradas en este README se
 
 # 🧱 ARQUITECTURA DEL PROYECTO
 
-├── Files/ # Datos y documentos fuente
-│ ├── Customer Flight Activity.csv
-│ ├── Customer Loyalty History.csv
-│ └── evaluacion-final.md
+├── Files/                     # Datos y documentos fuente
+│   ├── Customer Flight Activity.csv
+│   ├── Customer Loyalty History.csv
+│   └── evaluacion-final.md
 │
-├── images/ # Visualizaciones generadas
-│ ├── distribuciones.png
-│ ├── correlacion.png
-│ └── boxplots.png
+├── data_privada/              # Datos limpios y archivos ignorados por Git
+│   └── Customer_Flight_Activity_and_Loyalty_History.csv
 │
-├── src/ # Código fuente del proyecto
-│ ├── pycache/ # Caché de Python
-│ ├── init.py # Inicializa el paquete
-│ ├── soporte_transformacion.py # Funciones auxiliares para EDA y limpieza
-│ └── bda-modulo-3-evaluacion-final-... # Script/notebook de análisis
+├── images/                    # Visualizaciones generadas
+│   ├── distribuciones.png
+│   ├── correlacion.png
+│   └── boxplots.png
 │
-├── README.md # Documentación principal
+├── src/                       # Código fuente del proyecto
+│   ├── __pycache__/           # Caché de Python
+│   ├── __init__.py            # Inicializa el paquete
+│   ├── soporte_transformacion.py        # Funciones auxiliares para EDA y limpieza
+│   └── bda-modulo-3-evaluacion-final-... # Script/notebook de análisis
+│
+└── README.md                  # Documentación principal
+
 
 
 ---
@@ -101,5 +105,14 @@ Este módulo contiene funciones desarrolladas para agilizar y estructurar el an�
 
 Para usarlo en un notebook:
 
-```python
 from src.soporte_transformacion import *
+
+---
+
+# 🛠️ CARPETA: `data_privada`
+
+Dentro de la carpeta **`data_privada/`** se almacena el **CSV limpio** generado durante el procesamiento de datos.  
+Esta carpeta se utiliza para:
+
+- **Mantener el repositorio ligero**, evitando almacenar archivos grandes.  
+- **Facilitar el flujo de trabajo**, guardando datasets procesados sin necesidad de versionarlos en Git.  

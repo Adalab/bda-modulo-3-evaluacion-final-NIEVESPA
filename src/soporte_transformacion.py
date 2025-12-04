@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+from IPython.display import display, Markdown
 
 # CON ESTA FUNCIÓN REALIZAMOS UN ANÁLISIS EXPLORATORIO DE UNA COLUMNA NUMÉRICA, CON CALCULOS ESTADÍSTICOS CLAVE(MÉTRICAS DE TENDENCIA CENTRAL Y DISPERSIÓN)
 def exploracion_numerica(df, col):
@@ -37,7 +38,8 @@ def exploracion_numerica(df, col):
     sns.boxplot(data=df, 
                 x=col, 
                 ax = axes[1], 
-                color = "seagreen");
+                color = "seagreen")
+    plt.show();
 
 
 # CON ESTA FUNCIÓN REALIZAMOS UN ANÁLISIS EXPLORATORIO DE UNA COLUMNA NUMÉRICA, CENTRADO EN PERCEPTILES Y OUTLIERS
@@ -67,7 +69,8 @@ def exploracion_outliers(df, col):
     
     print(f'{'='*20} ANALISIS PERCEPTILES Y OUTLIERS COLUMNA: {col} {'='*20}')
           
-    print(df_outliers); 
+    print(df_outliers)
+    plt.show(); 
 
 
     # CON ESTA FUNCIÓN REALIZAMOS UN ANÁLISIS EXPLORATORIO DE UNA COLUMNA CATEGÓRICA, CON CALCULOS ESTADÍSTICOS CLAVE(MÉTRICAS DE TENDENCIA CENTRAL Y DISPERSIÓN)
@@ -89,10 +92,12 @@ def exploracion_categorica(df, col):
     print('-'*75)
   
 
-    print(f'{'='*20} VISUALIZACIÓN: {col} {'='*20}')
+    display(Markdown(f' ###VISUALIZACIÓN: {col}'))
     sns.countplot(data=df, 
                  x=col, 
-                 palette= "mako");
+                 palette= "mako")
+    plt.xticks(rotation=90)
+    plt.show();
 
 
 
@@ -119,4 +124,5 @@ def visualizacion_nulos(df, cols):
         axes[i].pie(valores, labels=etiquetas, autopct='%1.1f%%', startangle=90, colors=colores)
         axes[i].set_title(f'Nulos en {col}')
 
-plt.tight_layout();
+plt.tight_layout()
+plt.show();
