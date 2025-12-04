@@ -159,7 +159,3 @@ Conclusión: **a mayor nivel educativo, mayor salario**.
   * Married (58%)
   * Single (27%)
   * Divorced (15%)
-
----
-
-Si quieres, puedo convertir todo esto en **PDF**, **Word**, **README profesional**, o incluso añadir **índices automáticos** y estilos visuales.

@@ -1,7 +1,7 @@
 
 # DA Módulo 3: Ejercicio de evaluación final
 
-- Antes de empezar, hay que crear un nuevo repositorio desde GitHub Classroom usando este [enlace](https://classroom.github.com/a/XPQNhyyO). Una vez creado, hay que clonar en nuestro ordenador y en la carpeta creada empezaremos a trabajar en el ejercicio.
+- Antes de empezar, hay que crear un nuevo repositorio desde GitHub Classroom usando este enlace ####. Una vez creado, hay que clonar en nuestro ordenador y en la carpeta creada empezaremos a trabajar en el ejercicio.
 
 - Puedes usar recursos externos, incluyendo internet y materiales de referencia o tus propias notas.
 

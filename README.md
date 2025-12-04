@@ -56,49 +56,25 @@ Incluye datos demográficos y de membresía:
 El análisis incluye gráficos que permiten responder a:
 
 - **2.1** Distribución mensual de vuelos reservados  
-![Distribución vuelos](images\barplot_reservas_desglose_mensual.png)
+<p><img src="images/barplot_reservas_desglose_mensual.png" width="500"></p>
 
-- **2.2** Relación entre distancia volada y puntos acumulados 
-![Puntos Aerolínea](images/scatterplot_puntos_aerolinea.png)
+- **2.2** Relación entre distancia volada y puntos acumulados  
+<p><img src="images/scatterplot_puntos_aerolinea.png" width="500"></p>
 
-- **2.3** Distribución de clientes por provincia/estado 
-![Distribución clientes](images/countplot_procedencia_clientes.png) 
+- **2.3** Distribución de clientes por provincia/estado  
+<p><img src="images/countplot_procedencia_clientes.png" width="500"></p>
 
 - **2.4** Comparación del salario medio por nivel educativo  
-![Salario vs Nivel Educativo](images/boxplot_salario_promedio.png)
+<p><img src="images/boxplot_salario_promedio.png" width="500"></p>
 
 - **2.5** Proporción de tipos de tarjeta de fidelidad  
-![Fidelidad](images\pie_fidelidad.png)
+<p><img src="images/pie_fidelidad.png" width="450"></p>
 
 - **2.6** Distribución combinada por estado civil y género  
-![Distribución estado civil](images\countplot_distribucion_civil_genero.png)
+<p><img src="images/countplot_distribucion_civil_genero.png" width="500"></p>
+
 
 Las visualizaciones generadas durante el análisis y mostradas en este README se encuentran en `images/`.
-
----
-
-# 🧱 ARQUITECTURA DEL PROYECTO
-
-├── Files/                     # Datos y documentos fuente
-│   ├── Customer Flight Activity.csv
-│   ├── Customer Loyalty History.csv
-│   └── evaluacion-final.md
-│
-├── data_privada/              # Datos limpios y archivos ignorados por Git
-│   └── Customer_Flight_Activity_and_Loyalty_History.csv
-│
-├── images/                    # Visualizaciones generadas
-│   ├── distribuciones.png
-│   ├── correlacion.png
-│   └── boxplots.png
-│
-├── src/                       # Código fuente del proyecto
-│   ├── __pycache__/           # Caché de Python
-│   ├── __init__.py            # Inicializa el paquete
-│   ├── soporte_transformacion.py        # Funciones auxiliares para EDA y limpieza
-│   └── bda-modulo-3-evaluacion-final-... # Script/notebook de análisis
-│
-└── README.md                  # Documentación principal
 
 ---
 
